@@ -8,29 +8,52 @@ import './App.css';
 
 const buttonData = [
   {
-    name: 'GitHub',
-    src: '',
-    icon: <FaGithub />,
+    name:
+      <a
+        href="https://github.com/gesse-carlos"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub
+      </a>,
+    icon: <FaGithub className="icon" />,
   },
   {
-    name: 'LinkedIn',
-    src: '',
-    icon: <FaLinkedin />,
+    name:
+      <a
+        href="https://www.linkedin.com/in/gesse-carlos/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        LinkedIn
+      </a>,
+    icon: <FaLinkedin className="icon" />,
   },
   {
-    name: 'Email',
-    src: '',
-    icon: <FiMail />,
+    name:
+      <a
+        href="mailto:gesse.carlos@outlook.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Email
+      </a>,
+    icon: <FiMail className="icon" />,
   },
   {
-    name: 'Codewars',
-    src: '',
-    icon: <SiCodewars />,
+    name:
+      <a
+        href="https://www.codewars.com/users/gesse-carlos"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Codewars
+      </a>,
+    icon: <SiCodewars className="icon" />,
   },
   {
-    name: 'Baixe meu CV',
-    src: '',
-    icon: <FiDownload />,
+    name: <a href="https://periodicos.ufmg.br/index.php/temporalidades/article/download/5819/pdf/19096">Baixe meu CV</a>,
+    icon: <FiDownload className="icon" />,
   },
 ];
 
@@ -38,15 +61,17 @@ function App() {
   return (
     <div className="App">
       <Header />
-      { buttonData.map((button, index) => (
-        <Button
-          name={ button.name }
-          className="link-button"
-          icon={ button.icon }
-          src={ button.src }
-          key={ index }
-        />
-      ))}
+      <main className="button-container">
+        { buttonData.map((button, index) => (
+          <Button
+            type={ button.name !== 'Baixe meu CV' ? "button" : "download"}
+            name={ button.name }
+            className="link-button"
+            icon={ button.icon }
+            key={ index }
+          />
+        ))}
+      </main>
     </div>
   );
 }

@@ -4,8 +4,10 @@ function Header() {
   return (
     <header className="header-container">
       <div className="profile-picture"></div>
-      <h1>Gessé Carlos</h1>
-      <h2>Desenvolvedor Front-End</h2>
+      <div className="titles-container">
+        <h1 id="title">Gessé Carlos</h1>
+        <h2 id="subtitle">Desenvolvedor Front-End</h2>
+      </div>
     </header>
   );
 }

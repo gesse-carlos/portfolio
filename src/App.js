@@ -38,12 +38,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      { buttonData.map((button) => (
+      { buttonData.map((button, index) => (
         <Button
           name={ button.name }
           className="link-button"
           icon={ button.icon }
           src={ button.src }
+          key={ index }
         />
       ))}
     </div>

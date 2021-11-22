@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiMail, FiDownload } from "react-icons/fi";
 import { SiCodewars } from "react-icons/si";
 import Button from './components/Button';
+import Header from './components/Header';
 import './App.css';
 
 const buttonData = [
@@ -36,6 +37,7 @@ const buttonData = [
 function App() {
   return (
     <div className="App">
+      <Header />
       { buttonData.map((button) => (
         <Button
           name={ button.name }

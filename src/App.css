@@ -37,6 +37,29 @@
   background-color: #e6edf0;
 }
 
+@media (max-width: 640px) and (orientation: landscape){
+  .profile-picture {
+    height: 50vh;
+    width: 15vw;
+  }
+  #title {
+    font-size: 35px;
+  }
+  #subtitle {
+    font-size: 20px;
+  }
+  .titles-container {
+    margin: 15vh 0 0 10vh;
+  }
+  .button-container {
+    margin-left: 8.5vw;
+    width: 80vw;
+  }
+  .link-button {
+    height: 15vh;
+  }
+}
+
 @media (min-width: 700px) {
   .profile-picture {
     height: 30vh;

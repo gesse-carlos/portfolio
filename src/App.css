@@ -37,9 +37,74 @@
   background-color: #e6edf0;
 }
 
+@media (max-width: 640px) and (orientation: landscape){
+  .profile-picture {
+    height: 50vh;
+    width: 15vw;
+  }
+  #title {
+    font-size: 35px;
+  }
+  #subtitle {
+    font-size: 20px;
+  }
+  .titles-container {
+    margin: 15vh 0 0 10vh;
+  }
+  .button-container {
+    margin-left: 8.5vw;
+    width: 80vw;
+  }
+  .link-button {
+    height: 15vh;
+  }
+}
+
 @media (min-width: 700px) {
   .profile-picture {
-    height: 7rem;
-    width: 17rem;
+    height: 30vh;
+    width: 25vw;
+  }
+  #title {
+    font-size: 50px;
+  }
+  #subtitle {
+    font-size: 30px;
+  }
+  .titles-container {
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+  .profile-picture {
+    height: 50vh;
+    width: 25vw;
+  }
+  #title {
+    font-size: 50px;
+  }
+  #subtitle {
+    font-size: 30px;
+  }
+  .titles-container {
+    margin-top: 17vh;
+  }
+  .button-container {
+    margin-left: 8.5vw;
+    width: 80vw;
+  }
+}
+
+@media (min-width: 720px) {
+  .profile-picture {
+    width: 20vw;
+    height: 60vh;
+  }
+  .link-button {
+    width: 50vw;
+  }
+  .button-container {
+    align-items: center;
   }
 }

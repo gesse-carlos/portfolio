@@ -95,3 +95,16 @@
     width: 80vw;
   }
 }
+
+@media (min-width: 720px) {
+  .profile-picture {
+    width: 20vw;
+    height: 60vh;
+  }
+  .link-button {
+    width: 50vw;
+  }
+  .button-container {
+    align-items: center;
+  }
+}

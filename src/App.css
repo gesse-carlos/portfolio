@@ -109,7 +109,7 @@
   }
 }
 
-@media (min-width: 768px) and (min-height: 1024px) {
+@media (min-width: 720px) and (min-height: 1024px) {
   .profile-picture {
     width: 20vw;
     height: 30vh;

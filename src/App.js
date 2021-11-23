@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FiMail, FiDownload } from "react-icons/fi";
+import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import { SiCodewars } from "react-icons/si";
 import Button from './components/Button';
 import Header from './components/Header';
@@ -32,17 +32,6 @@ const buttonData = [
   {
     name:
       <a
-        href="mailto:gesse.carlos@outlook.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Email
-      </a>,
-    icon: <FiMail className="icon" />,
-  },
-  {
-    name:
-      <a
         href="https://www.codewars.com/users/gesse-carlos"
         target="_blank"
         rel="noreferrer"
@@ -52,8 +41,26 @@ const buttonData = [
     icon: <SiCodewars className="icon" />,
   },
   {
-    name: <a href="https://periodicos.ufmg.br/index.php/temporalidades/article/download/5819/pdf/19096">Baixe meu CV</a>,
-    icon: <FiDownload className="icon" />,
+    name:
+      <a
+        href="https://medium.com/@gesse.carlos"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Medium
+      </a>,
+    icon: <FaMedium className="icon" />,
+  },
+  {
+    name:
+      <a
+        href="mailto:gesse.carlos@outlook.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Email
+      </a>,
+    icon: <FiMail className="icon" />,
   },
 ];
 

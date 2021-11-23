@@ -52,3 +52,23 @@
     margin-top: 10vh;
   }
 }
+
+@media (min-width: 700px) and (orientation: landscape) {
+  .profile-picture {
+    height: 50vh;
+    width: 25vw;
+  }
+  #title {
+    font-size: 50px;
+  }
+  #subtitle {
+    font-size: 30px;
+  }
+  .titles-container {
+    margin-top: 17vh;
+  }
+  .button-container {
+    margin-left: 8.5vw;
+    width: 80vw;
+  }
+}

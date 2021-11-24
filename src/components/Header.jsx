@@ -3,7 +3,9 @@ import React from 'react';
 function Header() {
   return (
     <header className="header-container">
-      <div className="profile-picture"></div>
+      <div className="picture-container">
+        <div className="picture"></div>
+      </div>
       <div className="titles-container">
         <h1 id="title">Gessé Carlos</h1>
         <h2 id="subtitle">Front-end Developer</h2>

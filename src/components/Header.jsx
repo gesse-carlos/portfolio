@@ -6,7 +6,7 @@ function Header() {
       <div className="profile-picture"></div>
       <div className="titles-container">
         <h1 id="title">Gessé Carlos</h1>
-        <h2 id="subtitle">Desenvolvedor Front-End</h2>
+        <h2 id="subtitle">Front-end Developer</h2>
       </div>
     </header>
   );

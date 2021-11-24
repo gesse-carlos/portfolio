@@ -30,8 +30,8 @@ body {
 .profile-picture {
   background: url('./imgs/profile.jpeg');
   background-size: cover;
-  width: 35vw;
-  height: 20vh;
+  min-width: 130px;
+  min-height: 130px;
   border-radius: 50%;
 }
 
@@ -87,13 +87,13 @@ button {
 
 @media (min-width: 640px) and (orientation: landscape) {
   .header-container {
-    height: 40vh;
-    max-height: 40vh;
+    height: 50vh;
+    max-height: 50vh;
   }
 
   .profile-picture {
-    height: 40vh;
-    width: 20vw;
+    height: 160px;
+    width: 130px;
   }
 
   .titles-container {
@@ -109,4 +109,129 @@ button {
     height: 10vh;
     margin-bottom: 10px;
   }
+}
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .header-container {
+      height: 25vh;
+      max-height: 25vh;
+    }
+    .profile-picture {
+      min-height: 160px;
+      min-width: 130px;
+    }
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .profile-picture {
+      width: 180px;
+    }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .profile-picture {
+      min-width: 200px;
+    }
+    .titles-container {
+      justify-content: center;
+    }
+    #title {
+      font-size: 50px;
+    }
+    #subtitle {
+      font-size: 25px;
+    }
+    .icon {
+      font-size: 50px;
+    }
+    .link-button {
+      min-width: 500px;
+      font-size: 50px;
+    }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .header-container {
+      height: 30vh;
+      align-items: center;
+    }
+    #title {
+      font-size: 50px;
+    }
+    #subtitle {
+      font-size: 30px;
+    }
+    .icon {
+      font-size: 45px;
+    }
+    .link-button {
+      min-width: 400px;
+      font-size: 45px;
+    }
+}
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .profile-picture {
+      min-width: 300px;
+    }
+    #title {
+      font-size: 70px;
+    }
+    #subtitle {
+      font-size: 35px;
+    }
+    .link-button {
+      min-width: 700px;
+      font-size: 60px;
+    }
+    .icon {
+      font-size: 70px;
+    }
+}
+
+@media only screen
+  and (min-device-width: 1366px)
+  and (max-device-width: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .profile-picture {
+      min-width: 300px;
+      min-height: 300px;
+    }
+    #title {
+      font-size: 60px;
+    }
+    #subtitle {
+      font-size: 35px;
+    }
+    .header-container {
+      max-height: 30vh;
+    }
+    .link-button {
+      min-width: 800px;
+      font-size: 70px;
+    }
+    .icon {
+      font-size: 60px;
+    }
 }

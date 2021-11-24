@@ -5,8 +5,10 @@ function Button({ name, className, icon, src}) {
   return (
     <a href={ src} target="_blank" rel="noreferrer">
       <button type="button" name={name} className={className} id={name}>
-        {icon}
-        {name}
+        <span className="button-text-container">
+          {icon}
+          <span className="button-text">{name}</span>
+        </span>
       </button>
     </a>
   );

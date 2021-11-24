@@ -37,17 +37,19 @@ const buttonData = [
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main className="button-container">
-        { buttonData.map((button, index) => (
-          <Button
-            name={ button.name }
-            className="link-button"
-            icon={ button.icon }
-            src={ button.src }
-            key={ index }
-          />
-        ))}
+      <main className="main-container">
+        <Header />
+        <section className="button-container">
+          { buttonData.map((button, index) => (
+            <Button
+              name={ button.name }
+              className="link-button"
+              icon={ button.icon }
+              src={ button.src }
+              key={ index }
+            />
+          ))}
+        </section>
       </main>
     </div>
   );

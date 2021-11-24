@@ -84,3 +84,29 @@ button {
   font-size: 30px;
   margin-right: 20px;
 }
+
+@media (min-width: 640px) and (orientation: landscape) {
+  .header-container {
+    height: 40vh;
+    max-height: 40vh;
+  }
+
+  .profile-picture {
+    height: 40vh;
+    width: 20vw;
+  }
+
+  .titles-container {
+    justify-content: center;
+  }
+
+  .button-container {
+    margin-top: 20px;
+    height: 60vh;
+  }
+
+  .link-button {
+    height: 10vh;
+    margin-bottom: 10px;
+  }
+}

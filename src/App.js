@@ -8,58 +8,28 @@ import './App.css';
 
 const buttonData = [
   {
-    name:
-      <a
-        href="https://github.com/gesse-carlos"
-        target="_blank"
-        rel="noreferrer"
-      >
-        GitHub
-      </a>,
+    name: 'GitHub',
+    src: 'https://github.com/gesse-carlos',
     icon: <FaGithub className="icon" />,
   },
   {
-    name:
-      <a
-        href="https://www.linkedin.com/in/gesse-carlos/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        LinkedIn
-      </a>,
+    name: 'LinkedIn',
+    src: 'https://www.linkedin.com/in/gesse-carlos/',
     icon: <FaLinkedin className="icon" />,
   },
   {
-    name:
-      <a
-        href="https://www.codewars.com/users/gesse-carlos"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Codewars
-      </a>,
+    name: 'Codewars',
+    src: 'https://www.codewars.com/users/gesse-carlos',
     icon: <SiCodewars className="icon" />,
   },
   {
-    name:
-      <a
-        href="https://medium.com/@gesse.carlos"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Medium
-      </a>,
+    name: 'Medium',
+    src: 'https://medium.com/@gesse.carlos',
     icon: <FaMedium className="icon" />,
   },
   {
-    name:
-      <a
-        href="mailto:gesse.carlos@outlook.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Email
-      </a>,
+    name: 'Email',
+    src: 'mailto:gesse.carlos@outlook.com',
     icon: <FiMail className="icon" />,
   },
 ];
@@ -71,10 +41,10 @@ function App() {
       <main className="button-container">
         { buttonData.map((button, index) => (
           <Button
-            type={ button.name !== 'Baixe meu CV' ? "button" : "download"}
             name={ button.name }
             className="link-button"
             icon={ button.icon }
+            src={ button.src }
             key={ index }
           />
         ))}

@@ -1,18 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-function Button({ name, className, icon, type}) {
+function Button({ name, className, icon, src}) {
   return (
-    <button
-      type={ type }
-      name={ name }
-      className={ className }
-      id={ name }
-    >
-      { icon }
-      { name }
-    </button>
-  )
+    <a href={ src} target="_blank" rel="noreferrer">
+      <button type="button" name={name} className={className} id={name}>
+        {icon}
+        {name}
+      </button>
+    </a>
+  );
 }
 
 const { string } = PropTypes;
@@ -21,6 +18,7 @@ Button.propTypes = {
   name: string,
   className: string,
   icon: string,
+  src: string,
 }.required;
 
 export default Button;

@@ -8,7 +8,7 @@ function Header() {
       </div>
       <div className="titles-container">
         <h1 id="title">Gessé Carlos</h1>
-        <h2 id="subtitle">Front-end Developer</h2>
+        <h2 id="subtitle">Fullstack Developer</h2>
       </div>
     </header>
   );
